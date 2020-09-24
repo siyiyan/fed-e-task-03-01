@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snabbdom</title>
+    <style>
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            overflow: hidden;
+        }
+        .sort-wrap .sort{
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .sort.active {
+            background: #ccc;
+        }
+        .btn.add {
+            float: right;
+            background: #ccc;
+            border: 1px solid black;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+        .list {
+            margin-top: 10px;
+            position: relative;
+        }
+        .list .row{
+            display: flex;
+            border: 1px solid #000;
+            position: absolute;
+            left: 0;
+            background: antiquewhite;
+            transition: transform .5s ease-in-out, opacity .5s ease-out, left .5s ease-in-out;
+        }
+        .list .row .remove {
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .list .row .col{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
