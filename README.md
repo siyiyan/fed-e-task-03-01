@@ -74,4 +74,4 @@ let vm = new Vue({
 >   - code\2-2
 #### 3、参考 Snabbdom 提供的电影列表的示例，利用Snabbdom 实现类似的效果，如图：
 > 答
->   - code\2-2
+>   - code\2-3
