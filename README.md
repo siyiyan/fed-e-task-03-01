@@ -63,7 +63,8 @@ let vm = new Vue({
 >           - 新节点的所有子节点先遍历完 (newStartIdx > newEndIdx)，循环结束
 >       - 如果老节点的数组先遍历完(oldStartIdx > oldEndIdx)，说明新节点有剩余，把剩余节点批量插入到右边
 >       - 如果新节点的数组先遍历完(newStartIdx > newEndIdx)，说明老节点有剩余，把剩余节点批量删除
->           - 
+
+
 ### 二、编程题
 
 #### 1、模拟 VueRouter 的 hash 模式的实现，实现思路和 History 模式类似，把 URL 中的 # 后面的内容作为路由的地址，可以通过 hashchange 事件监听路由地址的变化。
